@@ -9,6 +9,9 @@ function TweetHome() {
     const logoTwitter = <FontAwesomeIcon icon={faTwitter} className={styles.logoTwitter} />
     const firstname = "Alex";
     const username = "@AlexLeBg";
+    const tweet = <Tweet />
+    const lastTweets = <LastTweets />
+    const trends = <Trends />
 
     return (
         <div className={styles.mainDiv}>
@@ -34,17 +37,17 @@ function TweetHome() {
                     {/* Componenent Tweet */}
                     <div className={styles.twitterContent}>
                         <div className={styles.tweetToWrite}>
-                            {Tweet}
+                            {tweet}
                         </div>
                         {/* Componenent Last Tweet */}
                         <div className={styles.lastTweet}>
-                            {LastTweets}
+                            {lastTweets}
                         </div>
                     </div>
                 </div>
                 {/* Component Trends */}
                 <div className={styles.trends}>
-                    {Trends}
+                    {trends}
                 </div>
             </div>
         </div>

@@ -1,6 +1,9 @@
 import styles from '../styles/Tweet.module.css';
+import { useState } from 'react';
 
 function Tweet() {
+    const [tweet, setTweet]=useState("");
+
     return (
         <div className={styles.TweetContainer}>
             <div className={styles.inputTweet}>
@@ -9,11 +12,13 @@ function Tweet() {
                     <textarea 
                         className={styles.input} 
                         placeholder={"What's up?"} 
+                        onChange={(e) => setTweet(e.target.value.length)}
+                        maxLength={280}
                     >
                     </textarea>
               
                     <div className={styles.btnContainer}>
-                        <div className={styles.counter}>0/280</div>
+                        <div className={styles.counter}>{tweet}/280</div>
                         <div className={styles.tweetBtn}>Tweet</div>
                     </div>
                 </div>
@@ -23,4 +28,4 @@ function Tweet() {
     )
 }
 
-export default Tweet()
+export default Tweet;

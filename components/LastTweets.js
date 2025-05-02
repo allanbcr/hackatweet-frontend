@@ -2,11 +2,10 @@ import styles from '../styles/LastTweets.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faTrash } from '@fortawesome/free-solid-svg-icons';
 
-
 function LastTweets() {
-
     const heart = <FontAwesomeIcon icon={faHeart} className={styles.heart} />
     const deleteBtn = <FontAwesomeIcon icon={faTrash} className={styles.deleteBtn} />
+
     return(
         <div className={styles.divContainer}>
             <div className={styles.LastTweetsContainer}>
@@ -44,4 +43,4 @@ function LastTweets() {
     )
 };
 
-export default LastTweets();
+export default LastTweets;

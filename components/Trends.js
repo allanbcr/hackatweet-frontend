@@ -23,4 +23,4 @@ function Trends() {
     )
 }
 
-export default Trends();
+export default Trends;
