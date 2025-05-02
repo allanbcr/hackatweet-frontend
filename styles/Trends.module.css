@@ -1,0 +1,22 @@
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: white;
+}
+
+.trendsContainer {
+    background-color: rgba(29,39,50,255);
+    border-radius: 4px;
+}
+
+.trendsTitle {
+    color: white;
+    font-weight: 800;
+}
+
+.trendsNumber {
+    color: rgba(120,130, 143, 255);
+}

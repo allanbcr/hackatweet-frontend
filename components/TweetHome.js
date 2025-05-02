@@ -2,6 +2,7 @@ import styles from '../styles/TweetHome.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Tweet from './Tweet';
+import Trends from './Trends';
 
 function TweetHome() {
     const logoTwitter = <FontAwesomeIcon icon={faTwitter} className={styles.logoTwitter} />
@@ -36,7 +37,9 @@ function TweetHome() {
                     </div>
                 </div>
                 {/* Component Trends */}
-                <div className={styles.trends}>teRRRRRRRRRRRRRRRRst</div>
+                <div className={styles.trends}>
+                    {Trends}
+                </div>
             </div>
         </div>
     );
