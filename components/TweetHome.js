@@ -30,7 +30,7 @@ function TweetHome() {
                                 <div className={styles.infoLeftContainerUsername}>{username}</div>
                             </div>
                         </div>
-                        <div className={styles.infoLeftContainerBtnLogout}>Logout</div>
+                        <button className={styles.infoLeftContainerBtnLogout}>Logout</button>
                     </div>
                 </div>
                 <div className={styles.rightContainer}>
