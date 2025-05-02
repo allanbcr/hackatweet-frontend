@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Left Part */
 .container {
     display: flex;
     height: 100vh;
@@ -12,7 +13,6 @@
 }
 
 .leftContainer {
-    border: 5px solid salmon;
     height: 100%;
     width: 25%;
     display: flex;
@@ -84,8 +84,19 @@
     font-weight: 800;
 }
 
+/* Right Part */
 .rightContainer {
-    border: 5px solid blue;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
     height: 100%;
     width: 75%;
+}
+
+.twitterContent {
+    height: 100%;
+    width: 100%;
+}
+
+.trends {
+    width: 35%
 }

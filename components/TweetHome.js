@@ -1,6 +1,7 @@
 import styles from '../styles/TweetHome.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import Tweet from './Tweet';
 
 function TweetHome() {
     const logoTwitter = <FontAwesomeIcon icon={faTwitter} className={styles.logoTwitter} />
@@ -26,8 +27,16 @@ function TweetHome() {
                     </div>
                 </div>
                 <div className={styles.rightContainer}>
-                    <div className={styles.twitterContent}></div>
+                    {/* Componenent Tweet and Last Tweet */}
+                    <div className={styles.twitterContent}>
+                        <div className={styles.tweetToWrite}>
+                            {Tweet}
+                        </div>
+                        <div className={styles.lastTweet}></div>
+                    </div>
                 </div>
+                {/* Component Trends */}
+                <div className={styles.trends}>teRRRRRRRRRRRRRRRRst</div>
             </div>
         </div>
     );
