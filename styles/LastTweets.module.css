@@ -1,0 +1,58 @@
+.divContainer{
+    margin-top: 20px;
+}
+
+.hastagColor {
+    color: rgba(42,146,247,255);
+}
+
+.LastTweetsContainer {
+    border-bottom: 1px solid gray;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logoIconUSer {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.firstname {
+    margin-left: 10px;
+    color: white;
+    font-weight: 800;
+}
+
+.username, .timeTweet {
+    color: rgba(120,130, 143, 255);
+    margin-left: 5px;
+}
+
+.message {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.btnInfo {
+    display: flex;
+}
+
+.likes, .deleteBtn {
+    color: white;
+}
+
+.deleteBtn {
+    margin-left: 10px;
+    margin-bottom: 34px;
+}
+
+.title, .message, .likes, .deleteBtn {
+    color: white;
+    margin-left: 20px;
+}
