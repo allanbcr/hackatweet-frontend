@@ -18,7 +18,9 @@ function TweetHome() {
                     </div>
                     <div className={styles.infoLeftContainer}>
                         <div className={styles.infoLeftContainerGroupingInfo}>
-                            <div className={styles.infoLeftContainerLogoUser}></div>
+                            <div className={styles.infoLeftContainerLogoUser}>
+                                <img src='userStartingIcon.webp' className={styles.logoIconUser} />
+                            </div>
                             <div className={styles.infoLeftContainerId}>
                                 <div className={styles.infoLeftContainerFirstname}>{firstname}</div>
                                 <div className={styles.infoLeftContainerUsername}>{username}</div>
@@ -28,11 +30,12 @@ function TweetHome() {
                     </div>
                 </div>
                 <div className={styles.rightContainer}>
-                    {/* Componenent Tweet and Last Tweet */}
+                    {/* Componenent Tweet */}
                     <div className={styles.twitterContent}>
                         <div className={styles.tweetToWrite}>
                             {Tweet}
                         </div>
+                        {/* Componenent Last Tweet */}
                         <div className={styles.lastTweet}></div>
                     </div>
                 </div>
