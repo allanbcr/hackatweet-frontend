@@ -37,6 +37,8 @@ function TweetHome() {
 
     const tweet = <Tweet refreshingData={refreshingData} />;
 
+    // To do --> Checking the # 
+
     // const trends = hastagList.map((element, index) => {
     //     return <Trends key={index} hastag={element.hastag} />
     // })

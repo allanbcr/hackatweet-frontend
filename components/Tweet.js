@@ -12,7 +12,6 @@ function Tweet(props) {
     function tweeted() {
         if (tweetCount > 0) {
             if (tweet.includes('#')){
-
                 let hastagCheck = tweet.split(' ')
                 for (let i = 0; i < hastagCheck.length; i++){
                     if (hastagCheck[i].includes('#')){
