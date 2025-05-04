@@ -4,14 +4,42 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Tweet from './Tweet';
 import Trends from './Trends';
 import LastTweets from './LastTweets';
+import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 function TweetHome() {
     const logoTwitter = <FontAwesomeIcon icon={faTwitter} className={styles.logoTwitter} />
-    const firstname = "Alex";
-    const username = "@AlexLeBg";
-    const tweet = <Tweet />
-    const lastTweets = <LastTweets />
+    const firstname = "Antoine";
+    const username = "@AntoineLeProf";
     const trends = <Trends />
+    const [tweets, setTweets] = useState([])
+    const hastagList = useSelector(state => state.hastags.value)
+
+    const fetchTweet = async () => {
+        const response = await fetch("http://localhost:3000/tweet")
+        const data = await response.json()
+        setTweets((data.allTweet).reverse());  
+    }
+
+    // Taking the data at page's initialization
+    useEffect(() => {
+        fetchTweet()
+    }, [])
+
+    // Refresh when tweeted with Props
+    const refreshingData = () => {
+        fetchTweet()
+    };
+
+    const lastTweets = tweets.map((element, index) => {
+        return <LastTweets key={index} message={element.message} />
+    });
+
+    const tweet = <Tweet refreshingData={refreshingData} />;
+
+    // const trends = hastagList.map((element, index) => {
+    //     return <Trends key={index} hastag={element.hastag} />
+    // })
 
     return (
         <div className={styles.mainDiv}>
