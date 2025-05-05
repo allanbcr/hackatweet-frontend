@@ -15,6 +15,7 @@
     border-radius: 6px;
     margin: 13px;
     height: fit-content;
+    cursor: pointer;
 }
 
 .trends {

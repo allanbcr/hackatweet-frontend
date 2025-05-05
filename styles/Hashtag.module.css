@@ -1,0 +1,18 @@
+.Hashtag {
+    color: white;
+    margin-left: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.hashtagInput {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.line {
+    
+}
