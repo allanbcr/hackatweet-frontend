@@ -6,29 +6,29 @@
     height: 100%; /* Hauteur totale de la fenêtre */
     background: rgba(0, 0, 0, 0.6); /* Fond noir transparent (effet flouté/foncé) */
     display: flex; /* Flexbox */
-    justify-content: center; /* Centrage horizontal de la modale */
-    align-items: center; /* Centrage vertical de la modale */
+    justify-content: center; 
+    align-items: center; 
     z-index: 1000; /* Affiché au-dessus de tout (valeur haute) */
   }
   
   .modal {
-    background-color: #15202b;
-    padding: 40px;
-    border-radius: 20px;
-    min-width: 400px;
-    display: flex;
-    flex-direction: column;
+    background-color: #15202b; /* Fond sombre */
+    padding: 40px; /* Espace intérieur généreux */
+    border-radius: 20px; /* Coins bien arrondis */
+    min-width: 400px; /* Largeur minimum, empêche de rétrécir trop */
+    display: flex; /* Flexbox */
+    flex-direction: column; 
     align-items: center;
-    gap: 15px;
-    color: white;
-    position: relative;
+    gap: 15px; /* Espace entre les éléments */
+    color: white; /* Texte en blanc */
+    position: relative; /* positionner le bouton X */
   }
   
   .modal h2 {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 20px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Petit espace en dessous du titre */
   }
   
   .modal input {
@@ -37,35 +37,35 @@
     border-radius: 8px; /*coins arrondis*/
     padding: 12px; /*espace extérieur*/
     width: 100%;
-    color: white; /*couleur du texte qu'on saisi*/
+    color: white; /*couleur du texte qu'on saisit en blanc*/
     font-size: 14px; 
   }
   
   .signup {
-    background-color: white;
-    color: black;
-    padding: 12px;
-    width: 100%;
+    background-color: white; /* Fond blanc */
+    color: black; /* Texte noir */
+    padding: 12px; /* Hauteur du bouton */
+    width: 100%; /* Prend toute la largeur du modal */
     font-weight: bold;
-    border: none;
-    border-radius: 30px;
-    margin-top: 10px;
+    border: none; /* Pas de bordure */
+    border-radius: 30px; /* Bords très arrondis (effet pilule) */
+    margin-top: 10px; /* Espace au-dessus du bouton */
     
   }
   
   .logo {
     font-size: 35px;
-    margin-bottom: 10px;
-    rotate: 180deg;
+    margin-bottom: 10px; /* Espace sous le logo */
+    rotate: 180deg; /* Le logo est retourné */
   }
   
   .closeBtn {
-    position: absolute;
+    position: absolute; /* Positionné par rapport à `.modal` */
     top: 15px;
     right: 20px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
+    background: none; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    color: white; /* Icône blanche */
+    font-size: 24px; /* Taille du X */
+    cursor: pointer; /* Curseur main au survol */
   }
