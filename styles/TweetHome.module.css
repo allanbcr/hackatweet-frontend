@@ -1,0 +1,112 @@
+.mainDiv {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(21,31,43,255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Left Part */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.leftContainer {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logoLeftContainer {
+    margin-top: 25px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.logoTwitter {
+    transform: rotate(180deg);
+    height: 60px;
+    color: white;
+    margin-left: 35px;
+}
+.infoLeftContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-bottom: 35px;
+    width: fit-content;
+    gap: 30px;
+}
+
+.infoLeftContainerGroupingInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.infoLeftContainerLogoUser {
+    height: 60px;
+    width: 60px;
+}
+
+.logoIconUser {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.infoLeftContainerId {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.infoLeftContainerFirstname {
+    color: white;
+}
+
+.infoLeftContainerUsername {
+    color: rgba(120,130, 143, 255);
+}
+
+.infoLeftContainerBtnLogout {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 12px;
+    border: 1px solid rgba(120,130, 143, 255);
+    background-color: rgba(21,31,43,255);
+    color: white;
+    padding: 3px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    width: 80px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+/* Right Part */
+.rightContainer {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    height: 100%;
+    width: 75%;
+}
+
+.twitterContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lastTweet {
+    overflow-y: scroll;
+}
+
+.trends {
+    width: 35%
+}
