@@ -14,7 +14,6 @@ function TweetHome() {
   );
   const firstname = "Antoine";
   const username = "@AntoineLeProf";
-  //   const trends = <Trends />;
   const [tweets, setTweets] = useState([]);
   const hastagList = useSelector((state) => state.hastags.value);
 
@@ -34,18 +33,25 @@ function TweetHome() {
     fetchTweet();
   };
 
-    // Refresh whe tweet deleted
-    const refreshAfterDelete = () => {
-        fetchTweet()
-    }
+  // Refresh whe tweet deleted
+  const refreshAfterDelete = () => {
+    fetchTweet();
+  };
 
-    const lastTweets = tweets.map((element, index) => {
-        console.log(element);
-        
-        return <LastTweets key={index} refreshAfterDelete={refreshAfterDelete} firstname={element.firstname} username={element.username} message={element.message} />
-    });
+  const lastTweets = tweets.map((element, index) => {
+    console.log(element);
+    const format = moment(element.date).fromNow();
 
-    return <LastTweets key={index} message={element.message} date={format} />;
+    return (
+      <LastTweets
+        key={index}
+        refreshAfterDelete={refreshAfterDelete}
+        firstname={element.firstname}
+        username={element.username}
+        message={element.message}
+        date={format}
+      />
+    );
   });
 
   const tweet = <Tweet refreshingData={refreshingData} />;
