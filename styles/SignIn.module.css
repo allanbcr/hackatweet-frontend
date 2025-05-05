@@ -51,12 +51,12 @@
     border: none;
     border-radius: 30px;
     margin-top: 10px;
-    cursor: pointer;
   }
   
   .logo {
     font-size: 35px;
     margin-bottom: 10px;
+    rotate: 180deg;
   }
   
   .closeBtn {

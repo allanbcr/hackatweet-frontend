@@ -1,14 +1,14 @@
 .container {
-    position: fixed;
+    position: fixed; /* Position fixe sur l'écran, reste visible même si on scrolle */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    width: 100%; /* Largeur totale de la fenêtre */
+    height: 100%; /* Hauteur totale de la fenêtre */
+    background: rgba(0, 0, 0, 0.6); /* Fond noir transparent (effet flouté/foncé) */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centrage horizontal de la modale */
+    align-items: center; /* Centrage vertical de la modale */
+    z-index: 1000; /* Affiché au-dessus de tout (valeur haute) */
   }
   
   .modal {
@@ -32,14 +32,13 @@
   }
   
   .modal input {
-    background-color: #192734;
-    border: 1px solid #2f3336;
-    border-radius: 8px;
-    padding: 12px;
+    background-color: #192734; /*fond sombre*/
+    border: 1px solid #2f3336; /*bordure discrète par défaut*/
+    border-radius: 8px; /*coins arrondis*/
+    padding: 12px; /*espace extérieur*/
     width: 100%;
-    color: white;
-    font-size: 14px;
-    outline: none;
+    color: white; /*couleur du texte qu'on saisi*/
+    font-size: 14px; 
   }
   
   .signup {
@@ -51,12 +50,13 @@
     border: none;
     border-radius: 30px;
     margin-top: 10px;
-    cursor: pointer;
+    
   }
   
   .logo {
     font-size: 35px;
     margin-bottom: 10px;
+    rotate: 180deg;
   }
   
   .closeBtn {

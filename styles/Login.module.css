@@ -4,7 +4,7 @@
   font-family: 'Arial', sans-serif;
 }
 
-/* Partie gauche : image de fond */
+/* Partie gauche : image de fond  */
 .left {
   width: 50%;
   height: 100%;
@@ -38,6 +38,7 @@
 .logoTop {
   font-size: 40px;
   color: white;
+  rotate: 180deg;
 }
 
 /* Zone texte + boutons */

@@ -26,7 +26,7 @@ function Login() {
       <h2>Join Hackatweet today.</h2>
       <button className={styles.signupBtn} onClick={() => setShowSignUp(true)}>Sign up</button>
       <p>Already have an account?</p>
-      <button className={styles.signinBtn} onClick={() => setShowSignUp(true)}>Sign in</button>
+      <button className={styles.signinBtn} onClick={() => setShowSignIn(true)}>Sign in</button>
     </div>
   </div>
 {/* Modale affichée si showSignUp est true */}
