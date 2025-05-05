@@ -8,7 +8,7 @@ function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Hackatweet</a>
         </h1>
-        <Link href='/login'>TweetHome</Link>
+      
       </main>
     </div>
   );
