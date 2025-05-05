@@ -17,6 +17,7 @@ function LastTweets(props) {
   const deleteBtn = (
     <FontAwesomeIcon icon={faTrash} className={styles.deleteBtn} />
   );
+  const tweetId = "681899d3b43c551e39ad765c";
 
   // Add the color and the number of like
   function tweetLiked() {
@@ -32,20 +33,17 @@ function LastTweets(props) {
   // Delete the tweet
   function deleteTweet() {
     const tweetToDelete = async () => {
-      const response = await fetch(
-        "http://localhost:3000/tweet/6814e27677497ff6b14a158e",
-        {
-          method: "DELETE",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({}),
-        }
-      );
+      const response = await fetch(`http://localhost:3000/tweet/${tweetId}`, {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({}),
+      });
       const data = await response.json();
       console.log(data);
+      props.refreshAfterDelete();
     };
     tweetToDelete();
   }
-
   return (
     <div className={styles.divContainer}>
       <div className={styles.LastTweetsContainer}>
@@ -53,8 +51,8 @@ function LastTweets(props) {
           <div className={styles.userLogo}>
             <img src="userStartingIcon.webp" className={styles.logoIconUSer} />
           </div>
-          <div className={styles.firstname}>Antoine</div>
-          <div className={styles.username}>@AntoineLeProf</div>
+          <div className={styles.firstname}>{props.firstname}</div>
+          <div className={styles.username}>{props.username}</div>
           <div className={styles.timeTweet}>· {props.date}</div>
         </div>
         <div className={styles.message}>{props.message}</div>

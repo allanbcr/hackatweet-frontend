@@ -34,8 +34,16 @@ function TweetHome() {
     fetchTweet();
   };
 
-  const lastTweets = tweets.map((element, index) => {
-    let format = moment(element.date).fromNow();
+    // Refresh whe tweet deleted
+    const refreshAfterDelete = () => {
+        fetchTweet()
+    }
+
+    const lastTweets = tweets.map((element, index) => {
+        console.log(element);
+        
+        return <LastTweets key={index} refreshAfterDelete={refreshAfterDelete} firstname={element.firstname} username={element.username} message={element.message} />
+    });
 
     return <LastTweets key={index} message={element.message} date={format} />;
   });

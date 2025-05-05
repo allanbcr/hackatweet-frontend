@@ -18,4 +18,4 @@ function Trends(props) {
   );
 }
 
-export default Trends;
+export default Trends;      
