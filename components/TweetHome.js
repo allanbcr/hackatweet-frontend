@@ -49,6 +49,7 @@ function TweetHome() {
   return (
     <div className={styles.mainDiv}>
       <div className={styles.container}>
+        {/*start header*/}
         <div className={styles.leftContainer}>
           <div className={styles.logoLeftContainer}>{logoTwitter}</div>
           <div className={styles.infoLeftContainer}>
@@ -73,6 +74,7 @@ function TweetHome() {
             </button>
           </div>
         </div>
+        {/*end header*/}
         <div className={styles.rightContainer}>
           {/* Componenent Tweet */}
           <div className={styles.twitterContent}>

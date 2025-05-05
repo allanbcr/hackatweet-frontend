@@ -1,36 +1,36 @@
 .container {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
-    color: white;
-    margin-left: 13px;
+  color: white;
+  margin-left: 13px;
 }
 
 .trendsContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(29,39,50,255);
-    border-radius: 6px;
-    margin: 13px;
-    height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(29, 39, 50, 255);
+  border-radius: 6px;
+  margin: 13px;
+  height: fit-content;
 }
 
 .trends {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 70px;
-    margin-top: 5px;
-    margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 15px;
 }
 
 .trendsTitle {
-    color: white;
-    font-weight: 800;
+  color: rgb(255, 0, 0);
+  font-weight: 800;
 }
 
 .trendsNumber {
-    color: rgba(120,130, 143, 255);
+  color: rgba(120, 130, 143, 255);
 }
