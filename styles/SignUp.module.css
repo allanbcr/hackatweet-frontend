@@ -1,0 +1,71 @@
+.container {
+    position: fixed; /* Position fixe sur l'écran, reste visible même si on scrolle */
+    top: 0;
+    left: 0;
+    width: 100%; /* Largeur totale de la fenêtre */
+    height: 100%; /* Hauteur totale de la fenêtre */
+    background: rgba(0, 0, 0, 0.6); /* Fond noir transparent (effet flouté/foncé) */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centrage horizontal de la modale */
+    align-items: center; /* Centrage vertical de la modale */
+    z-index: 1000; /* Affiché au-dessus de tout (valeur haute) */
+  }
+  
+  .modal {
+    background-color: #15202b;
+    padding: 40px;
+    border-radius: 20px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    position: relative;
+  }
+  
+  .modal h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .modal input {
+    background-color: #192734; /*fond sombre*/
+    border: 1px solid #2f3336; /*bordure discrète par défaut*/
+    border-radius: 8px; /*coins arrondis*/
+    padding: 12px; /*espace extérieur*/
+    width: 100%;
+    color: white; /*couleur du texte qu'on saisi*/
+    font-size: 14px; 
+  }
+  
+  .signup {
+    background-color: white;
+    color: black;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    
+  }
+  
+  .logo {
+    font-size: 35px;
+    margin-bottom: 10px;
+    rotate: 180deg;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }

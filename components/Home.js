@@ -9,9 +9,11 @@ function Home() {
           Welcome to <a href="https://nextjs.org">Hackatweet</a>
         </h1>
         <Link href='/tweetHome'>TweetHome</Link>
+        <Link href='/login'>Login</Link>
       </main>
     </div>
   );
 }
 
 export default Home;
+
