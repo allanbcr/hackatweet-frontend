@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Partie gauche : image de fond */
+.left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Partie droite : fond sombre, texte et boutons */
+.right {
+  width: 60%;
+  background-color: #15202b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 80px;
+}
+
+/* Logo Twitter (en haut à gauche) */
+.rightTop {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.logoTop {
+  font-size: 40px;
+  color: white;
+}
+
+/* Zone texte + boutons */
+.rightBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.signupBtn {
+  background-color: #1DA1F2;
+  color: white;
+  padding: 12px 0;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 250px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.signupBtn:hover {
+  background-color: #1a91da;
+}
+
+.signinBtn {
+  background-color: transparent;
+  color: white;
+  padding: 12px 0;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-size: 16px;
+  width: 250px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.signinBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
