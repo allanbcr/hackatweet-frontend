@@ -8,6 +8,11 @@ function Tweet(props) {
     const [tweet, setTweet]=useState("");
     const dispatch= useDispatch();
     let hastag = "";
+    const firstname = "Antoine";
+    const username = "@AntoineLeProf";
+    const userId = "6814e32a47310be069d530f3";
+    const tweetId = "6814e27677497ff6b14a158e";
+
 
     function tweeted() {
         if (tweetCount > 0) {
@@ -21,13 +26,15 @@ function Tweet(props) {
                 }
 
                 // Set the token via Redux or another method, obtained from the SignUp/In page
-                fetch('http://localhost:3000/tweet/addTweet/6814e27677497ff6b14a158e', {
+                fetch(`http://localhost:3000/tweet/addTweet/${tweetId}`, {
                     method: 'POST',
                     headers: {'Content-Type':'application/json'},
                     body: JSON.stringify({
+                    username: username,
+                    firstname: firstname,
                     message: tweet,
                     // Set the _id via Redux or another method, obtained from the SignUp/In page.
-                    writer: "6814e32a47310be069d530f3",
+                    writer: userId,
                     })
                 })
                 .then(response => response.json())
@@ -38,13 +45,15 @@ function Tweet(props) {
 
             } else {
                 // Set the token via Redux or another method, obtained from the SignUp/In page.
-                fetch('http://localhost:3000/tweet/addTweet/6814e27677497ff6b14a158e', {
+                fetch(`http://localhost:3000/tweet/addTweet/${tweetId}`, {
                     method: 'POST',
                     headers: {'Content-Type':'application/json'},
                     body: JSON.stringify({
-                    message: tweet,
-                    // Set the _id via Redux or another method, obtained from the SignUp/In page.
-                    writer: "6814e32a47310be069d530f3",
+                        username: username,
+                        firstname: firstname,
+                        message: tweet,
+                        // Set the _id via Redux or another method, obtained from the SignUp/In page.
+                        writer: userId,
                     })
                 })
                 .then(response => response.json())

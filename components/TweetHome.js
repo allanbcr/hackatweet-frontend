@@ -31,8 +31,15 @@ function TweetHome() {
         fetchTweet()
     };
 
+    // Refresh whe tweet deleted
+    const refreshAfterDelete = () => {
+        fetchTweet()
+    }
+
     const lastTweets = tweets.map((element, index) => {
-        return <LastTweets key={index} message={element.message} />
+        console.log(element);
+        
+        return <LastTweets key={index} refreshAfterDelete={refreshAfterDelete} firstname={element.firstname} username={element.username} message={element.message} />
     });
 
     const tweet = <Tweet refreshingData={refreshingData} />;
