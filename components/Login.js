@@ -28,6 +28,9 @@ function Login() {
       <p>Already have an account?</p>
       <button className={styles.signinBtn} onClick={() => setShowSignIn(true)}>Sign in</button>
     </div>
+    <div className={styles.rightBottomBottom}> 
+
+    </div>
   </div>
 {/* Modale affichée si showSignUp est true */}
 {showSignUp && <SignUp onClose={() => setShowSignUp(false)} />}
