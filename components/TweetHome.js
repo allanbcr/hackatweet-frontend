@@ -5,15 +5,16 @@ import Tweet from "./Tweet";
 import Trends from "./Trends";
 import LastTweets from "./LastTweets";
 import { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+
 import moment from "moment";
 
 function TweetHome() {
+  const user = useSelector((state) => state.user.value);
+
   const logoTwitter = (
     <FontAwesomeIcon icon={faTwitter} className={styles.logoTwitter} />
   );
-  const firstname = "Antoine";
-  const username = "@AntoineLeProf";
   const [tweets, setTweets] = useState([]);
   const hastagList = useSelector((state) => state.hastags.value);
 
@@ -39,7 +40,6 @@ function TweetHome() {
   };
 
   const lastTweets = tweets.map((element, index) => {
-    console.log(element);
     const format = moment(element.date).fromNow();
 
     return (
@@ -76,10 +76,10 @@ function TweetHome() {
               </div>
               <div className={styles.infoLeftContainerId}>
                 <div className={styles.infoLeftContainerFirstname}>
-                  {firstname}
+                  {user.username}
                 </div>
                 <div className={styles.infoLeftContainerUsername}>
-                  {username}
+                  {user.username}
                 </div>
               </div>
             </div>
@@ -92,6 +92,7 @@ function TweetHome() {
         <div className={styles.rightContainer}>
           {/* Componenent Tweet */}
           <div className={styles.twitterContent}>
+            <div>Test{user.username}</div>
             <div className={styles.tweetToWrite}>{tweet}</div>
             {/* Componenent Last Tweet */}
             <div className={styles.lastTweet}>{lastTweets}</div>
